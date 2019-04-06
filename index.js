@@ -33,6 +33,7 @@ const fetchExistingUsers = () => {
         }
       })
     })
+    .catch(error => console.error(error.message))
 }
 
 const filePathsAreStrings = (filePaths) => {
